@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/day_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/day_drawable_circle" />
+
+    <TextView
+        android:id="@+id/day_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp" />
+</FrameLayout>

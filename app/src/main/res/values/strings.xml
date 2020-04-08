@@ -1,0 +1,69 @@
+<resources>
+    <string-array name="expense_types_array">
+        <item>Заправка</item>
+        <item>Ремонт</item>
+        <item>Техосмотр</item>
+        <item>Прочее</item>
+    </string-array>
+
+    <string name="bluetooth_not_supported">Bluetooth не поддерживается</string>
+
+    <string name="app_name">Inspector</string>
+    <string name="category_diagnostics">Диагностика</string>
+    <string name="category_garage">Гараж</string>
+    <string name="category_calendar">Календарь</string>
+    <string name="category_expenses">Расходы</string>
+    <string name="expense_type_ti">Техосмотр</string>
+    <string name="expense_type_fuel">Заправка</string>
+    <string name="expense_type_repair">Ремонт</string>
+    <string name="expense_type_other">Прочее</string>
+    <string name="add">Добавить</string>
+    <string name="save">Сохранить</string>
+    <string name="hint_name">Название</string>
+    <string name="hint_price">Стоимость</string>
+    <string name="month">Месяц</string>
+    <string name="year">Год</string>
+    <string name="all_time">Всё время</string>
+    <string name="spent">Потрачено за:</string>
+    <string name="last_month">последний месяц:</string>
+    <string name="last_year">последний год:</string>
+    <string name="all_time_lower">всё время:</string>
+    <string name="avg_price">Средняя стоимость:</string>
+    <string name="per_month">в месяц:</string>
+    <string name="per_litre">за литр:</string>
+    <string name="add_car">Добавить машину</string>
+    <string name="diagnose">Диагностировать</string>
+    <string name="last_diagnostics">Последняя диагностика</string>
+    <string name="warning">предупреждение</string>
+    <string name="error">ошибка</string>
+    <string name="warnings">Предупреждения:</string>
+    <string name="errors">Ошибки:</string>
+    <string name="start_diagnose">Начать диагностику</string>
+    <string name="current_value">Текущее значение:</string>
+    <string name="error_code">Код:</string>
+    <string name="error_text">Текст:</string>
+    <string name="error_description">Описание:</string>
+    <string name="add_expense">Добавить запись</string>
+    <string name="services_nearby">Поблизости находятся</string>
+    <string name="car_service">СТО</string>
+    <string name="service_centre">Сервисный центр</string>
+    <string name="sc">С/Ц</string>
+    <string name="view_all_services">Посмотреть все доступные СЦ</string>
+    <string name="m">м</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="retry">Обновить</string>
+    <string name="no_internet_connection">Нет подключения к интернету</string>
+    <string name="no_location_data">Местоположение не доступно</string>
+
+    <string name="obd_waiting">Ожидание подключения к OBD2</string>
+    <string name="obd_connected">Подключено к OBD</string>
+    <string name="obd_disconnected">Отключено от OBD</string>
+    <string name="obd_error">Ошибка</string>
+
+    <string name="speed">Скорость</string>
+    <string name="kmh">км/ч</string>
+    <string name="rpm">RPM</string>
+
+    <string name="address_unknown">Точный адрес неизвестен</string>
+    <string name="error_loading_map">Не удалось загрузить карту</string>
+</resources>

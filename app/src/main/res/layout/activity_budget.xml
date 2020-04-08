@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/category_expenses"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vertical_line" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/radioMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:checked="true"
+            android:onClick="monthClick"
+            android:text="@string/month" />
+
+        <RadioButton
+            android:id="@+id/radioYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:onClick="yearClick"
+            android:text="@string/year" />
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:onClick="allClick"
+            android:text="@string/all_time" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/topLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="fuelClick"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_line"
+        app:layout_constraintTop_toTopOf="@+id/vertical_line">
+
+        <ImageView
+            android:id="@+id/iconTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel"
+            tools:layout_editor_absoluteX="62dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="repairClick"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_line"
+        app:layout_constraintEnd_toEndOf="@+id/horizontal_line"
+        app:layout_constraintStart_toEndOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/vertical_line">
+
+        <ImageView
+            android:id="@+id/iconTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repair"
+            tools:layout_editor_absoluteX="62dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="tiClick"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_line"
+        app:layout_constraintTop_toBottomOf="@+id/topLeft">
+
+        <ImageView
+            android:id="@+id/iconBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TI"
+            tools:layout_editor_absoluteX="62dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="otherClick"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/horizontal_line"
+        app:layout_constraintStart_toEndOf="@+id/bottomLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topRight">
+
+        <ImageView
+            android:id="@+id/iconBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            tools:layout_editor_absoluteX="62dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

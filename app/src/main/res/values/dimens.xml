@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="category_height">150dp</dimen>
+    <dimen name="category_max_width">380dp</dimen>
+    <dimen name="expense_text_size">20sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="button_height">120dp</dimen>
+    <dimen name="radius_lg">10dp</dimen>
+    <dimen name="radius_sm">5dp</dimen>
+    <dimen name="large_button_height">50dp</dimen>
+    <dimen name="large_button_radius">25dp</dimen>
+    <dimen name="date_drawable_size">24dp</dimen>
+    <dimen name="date_circle_radius">12dp</dimen>
+    <dimen name="date_square_radius">6dp</dimen>
+    <dimen name="expense_save_width">240dp</dimen>
+    <dimen name="expense_discard_width">60dp</dimen>
+</resources>

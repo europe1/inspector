@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErrorInfoActivity">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/obd_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="@string/error_code"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/error_info_code" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/error_info_text" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_description"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/error_info_description" />
+
+    <TextView
+        android:id="@+id/error_info_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="end"
+        android:text="P0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/error_info_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="Error"
+        app:layout_constraintEnd_toEndOf="@+id/error_info_code"
+        app:layout_constraintStart_toStartOf="@+id/error_info_code"
+        app:layout_constraintTop_toBottomOf="@+id/error_info_code" />
+
+    <TextView
+        android:id="@+id/error_info_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="Error description"
+        app:layout_constraintEnd_toEndOf="@+id/error_info_text"
+        app:layout_constraintStart_toStartOf="@+id/error_info_text"
+        app:layout_constraintTop_toBottomOf="@+id/error_info_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
